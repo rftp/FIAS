@@ -1,0 +1,2 @@
+select aoguid, formalname, shortname, okato, postalcode from addrobj where addrobj.aolevel = 1 and addrobj.actstatus = 1 order by formalname into outfile 'highest_level_subjects.txt' fields terminated by "," Enclosed by '"' lines terminated by '\n';
+
